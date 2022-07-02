@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background: url("../assets/images/bg.jpg");
+  background-size: cover;
+  scroll-behavior: smooth;
+}
+
+/* Hero Section Starts */
+
+#hero {
+  background: rgba(33, 41, 49, 0.8);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.hero-title {
+  font-size: 6rem;
+  font-weight: 900;
+  margin: 1rem;
+  width: 33%;
+  text-align: center;
+}
+.hero-description {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin: 2rem;
+  width: 56%;
+  text-align: center;
+}
+
+.dotted-underline {
+  text-decoration: underline dotted;
+  text-underline-offset: 0.5rem;
+}
+
+.fa-circle-down {
+  margin: 2rem;
+  font-size: 3rem;
+}
+/* Hero Section Ends */
+
+/* Content Section Starts */
+
+#content {
+  margin: 0 3rem;
+  background: rgba(33, 41, 49, 0.8);
+  height: 100vh;
+}
+
+.tab {
+  overflow: hidden;
+  border: none;
+  background: rgba(113, 121, 129, 0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tab button:first-child {
+  background-color: #fff;
+  color: black;
+  padding: 1rem;
+  border: none;
+}
+
+.tab button {
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 1rem;
+  border: none;
+  margin: 0;
+  background: none;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.fa-brands {
+  color: white;
+  margin: 0 1rem;
+}
+
+/* Date */
+.date {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.displayDate {
+  margin: 4rem 0;
+  font-size: 2rem;
+  color: #717981;
+}
+
+/* Post Section */
+.post {
+  background: white;
+  text-align: center;
+}
+.post-title {
+  font-size: 6rem;
+  text-transform: uppercase;
+  width: 50%;
+  margin: 0 auto;
+  color: #1e252d;
+  font-weight: 900;
+}
+
+.post-description {
+  font-weight: 500;
+  width: 40%;
+  margin: 3rem auto;
+  color: #1e252d;
+  line-height: 1.8;
+}
+
+.postImg {
+  display: block;
+  margin: 2rem auto;
+}
+
+.fullStory {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  background: white;
+  color: #1e252d;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: 2px solid black;
+  margin: 2rem auto;
+}
+
+/* 2 Columns Posts */
+.twoColumnPosts {
+  background: white;
+  display: grid;
+  grid-template-columns: auto auto;
+  place-content: space-between;
+  gap: 2rem;
+}
+
+.displayPostDate {
+  font-size: 1rem;
+  color: #717981;
+  margin: 1rem 0;
+}
+
+.posts {
+  text-align: center;
+  margin: 2rem 3rem;
+}
+
+.postsTitle {
+  margin: 1rem 0;
+}
+.postsDescription {
+  margin: 1rem auto;
+  width: 50%;
+  text-align: start;
+  line-height: 1.8;
+  font-size: 1.2rem;
+  color: #717981;
+}
+
+.pagination {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.mobilePagination {
+  display: none;
+}
+
+.pagination-links:first-child {
+  background-color: #eeeeee;
+}
+
+.pagination-links {
+  font-size: 1.2rem;
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  background-color: white;
+  border: 0.1px solid #909498;
+}
+
+/* Form Section */
+.form-section {
+  background-color: #eee;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+form {
+  font-family: "Source Sans Pro", sans-serif;
+  display: flex;
+  margin: 3rem auto;
+  padding: 3rem;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 0.5rem 0;
+  color: #909498;
+  font-weight: bold;
+}
+
+input {
+  background-color: #eee;
+  width: 100%;
+  border-width: 0;
+  border: 1px solid #909498;
+  line-height: 3;
+}
+textarea {
+  background-color: #eee;
+  border-width: 0;
+  border: 1px solid #909498;
+}
+
+.formBtn {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  width: 35%;
+  background-color: #eee;
+  border: 1px solid #909498;
+  color: #717981;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* About section */
+.aboutSection {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  gap: 3rem;
+}
+
+.aboutTitle {
+  font-weight: bold;
+}
+
+.aboutDescription {
+  width: 75%;
+  color: #717981;
+}
+
+.footer-icons {
+  color: #717981;
+}
+
+/* Content Section Ends */
+
+/* Footer  */
+
+.footer {
+  padding: 2rem;
+  background: #1e252d;
+  display: flex;
+  justify-content: center;
+  color: #c3c3c3;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1024px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  .hero-description {
+    font-size: 1.5rem;
+  }
+  .fa-circle-down {
+    display: none;
+  }
+  .tab {
+    display: none;
+  }
+
+  .displayDate {
+    font-size: 1rem;
+  }
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+  .post {
+    display: block;
+  }
+  .post-title {
+    font-size: 3rem;
+    width: 70%;
+  }
+  .post-description {
+    max-lines: 3;
+    font-size: 1rem;
+    width: 70%;
+    line-height: 2.5;
+  }
+  .postImg {
+    display: block;
+    width: 80%;
+  }
+  .fullStory {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: bold;
+    padding: 1rem 10rem;
+    background: white;
+    color: #1e252d;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border: 2px solid black;
+    margin: 2rem auto;
+  }
+  .twoColumnPosts {
+    grid-template-columns: auto;
+  }
+
+  posts {
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+  }
+
+  .postsTitle {
+    margin: 1rem auto;
+    width: 75%;
+  }
+  .postsDescription {
+    width: 100%;
+  }
+
+  .postsImg {
+    width: 100%;
+  }
+  .pagination {
+    display: none;
+  }
+  .mobilePagination {
+    display: flex;
+    justify-content: center;
+    background: white;
+  }
+  .pagination-link {
+    font-size: 1.2rem;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    background-color: white;
+    border: 0.1px solid #909498;
+  }
+  .form-section {
+    background-color: #eee;
+    display: block;
+    justify-content: start;
+  }
+  .formBtn {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    width: 100%;
+    background-color: #eee;
+    border: 1px solid #909498;
+    color: #717981;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+
+  .aboutSection {
+    display: grid;
+    margin: 1rem 2rem;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 1rem;
+  }
+  .footer {
+    display: none;
+  }
+}
