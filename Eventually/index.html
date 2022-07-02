@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>codedamn Project</title>
+  </head>
+  <body>
+    <!-- start writing your code -->
+    <section id="hero">
+      <div class="content-wrapper">
+        <h1 class="hero-title">Eventually</h1>
+        <p class="hero-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta iusto
+          ullam obcaecati sit possimus rem repellendus unde necessitatibus modi
+          iure?
+        </p>
+        <div class="signup">
+          <input type="text" placeholder="Email Address" />
+          <button class="btnSignUp">Sign Up</button>
+        </div>
+        <span class="displayMessage"></span>
+        <div class="footer-icons">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="credits">
+          <i class="fa-regular fa-copyright"></i> | credits: Unsplash + HTML5 UP
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const message = document.querySelector(".displayMessage");
+      const signupBtn = document.querySelector(".btnSignUp");
+
+      signupBtn.addEventListener("click", () => {
+        message.innerHTML = "Thank you!";
+      });
+    </script>
+  </body>
+</html>

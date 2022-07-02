@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  background-image: url("../assets/images/bg01.jpg");
+  background-size: cover;
+  color: white;
+}
+#hero {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(1, 4, 5, 0.8) 50%,
+    rgba(247, 247, 247, 0) 100%
+  );
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.content-wrapper {
+  margin: 2rem 3rem;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+}
+
+.hero-description {
+  font-size: 1rem;
+  color: #c3c3c3;
+  width: 30%;
+  line-height: 1.8;
+  margin: 2rem 0;
+}
+
+input {
+  background-color: transparent;
+  width: 20%;
+  line-height: 2.8rem;
+  text-indent: 1rem;
+  border-width: 0;
+  border: 1px solid #c3c3c3;
+  border-radius: 4px;
+  color: white;
+}
+
+.btnSignUp {
+  font-family: "Roboto", sans-serif;
+  background: #1cb495;
+  color: white;
+  border: none;
+  padding: 0.9rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.footer-icons {
+  position: absolute;
+  bottom: 3.5rem;
+}
+
+.fa-brands {
+  margin: 0 1rem;
+  color: #c3c3c3;
+}
+
+.fa-solid {
+  color: #c3c3c3;
+}
+.credits {
+  position: absolute;
+  bottom: 1rem;
+  left: 4rem;
+  color: #c3c3c3;
+}
+.displayMessage {
+  margin: 2rem 0;
+  color: #1cb495;
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .hero-title {
+    display: none;
+  }
+  .hero-description {
+    display: none;
+  }
+
+  input {
+    display: block;
+    width: 100%;
+  }
+  .btnSignUp {
+    margin: 1rem 0;
+    width: 100%;
+  }
+  .displayMessage {
+    color: #1cb495;
+  }
+}
