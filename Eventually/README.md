@@ -4,7 +4,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://eventually-iota.vercel.app//">
+    <a href="https://eventually-iota.vercel.app/">
       Demo
     </a>
   </h3>
