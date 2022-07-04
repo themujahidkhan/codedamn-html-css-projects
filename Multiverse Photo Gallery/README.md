@@ -1,14 +1,18 @@
-<h1 align="center">Codedamn HTML & CSS Projects</h1>
+<h1 align="center">Multiverse Photo Gallery</h1>
 
-Completed 3 Projects of HTML & CSS Projects
+![screenshot](https://i.imgur.com/isIHnNy.png)
 
- <a href="https://massively-landing-page-five.vercel.app/">
-     Mssively Landing Page
-    </a> |  <a href="https://eventually-iota.vercel.app/">
-     Eventually Landing Page
-    </a> |   <a href="https://photo-gallery-chi-eight.vercel.app/">
-     Multiverse Photo Gallery
+<div align="center">
+  <h3>
+    <a href="https://photo-gallery-chi-eight.vercel.app/">
+      Demo
     </a>
+  </h3>
+</div>
+
+## Overview
+
+3rd Project of codedamn HTML & CSS
 
 ### Built With
 
